@@ -3,7 +3,7 @@ from.models import State,District,Branch,Student,Course
 # Register your models here.
 class StudentAdmin(admin.ModelAdmin):
     filter_vertical = ('courses',)
-    exclude = ['created_user']
+    exclude = ['created_user'] 
     list_display=['name','image','project_Type']
 
 class StateAdmin(admin.ModelAdmin):
